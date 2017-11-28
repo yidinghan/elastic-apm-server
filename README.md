@@ -13,6 +13,7 @@ Here are somewhat different from the original [reference file](https://github.co
 ```yml
 apm-server:
   host: "0.0.0.0:8200"
+  shutdown_timeout: 15s
 output.elasticsearch:
   hosts: ["elasticsearch:9200"]
 setup.dashboards.enabled: true
