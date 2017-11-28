@@ -5,3 +5,18 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/playdingnow/elastic-apm-server.svg?style=flat-square)](https://hub.docker.com/r/playdingnow/elastic-apm-server)
 
 elastic-apm-server dockerfile
+
+# For compose file
+
+Here some different between original [reference file](https://github.com/elastic/apm-server/blob/master/apm-server.reference.yml)
+
+```yml
+apm-server:
+  host: "0.0.0.0:8200"
+output.elasticsearch:
+  hosts: ["elasticsearch:9200"]
+setup.dashboards.enabled: true
+setup.kibana:
+  host: "kibana:5601"
+logging.to_files: false
+```
