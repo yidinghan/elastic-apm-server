@@ -8,7 +8,7 @@ elastic-apm-server dockerfile
 
 # For compose file
 
-Here some different between original [reference file](https://github.com/elastic/apm-server/blob/master/apm-server.reference.yml)
+Here are somewhat different from the original [reference file](https://github.com/elastic/apm-server/blob/master/apm-server.reference.yml)
 
 ```yml
 apm-server:
