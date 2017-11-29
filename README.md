@@ -6,6 +6,15 @@
 
 elastic-apm-server dockerfile
 
+# Remarks
+ - The default secret_token have been changed
+   - xxVpmQB2HMzCL9PgBHVrnxjNXXw5J7bd79DFm6sjBJR5HPXDhcF8MSb3vv4bpg44
+   - so you should put the default token in the agent config, if use this image directly
+   - change it with your our token
+     - pull this repo, `git clone https://github.com/yidinghan/elastic-apm-server.git`
+     - change secret_token in the [reference file](https://github.com/elastic/apm-server/blob/master/apm-server.reference.yml)
+     - build one, `docker build -t elastic-apm-server:dev .`
+
 # For compose file
 
 Here are somewhat different from the original [reference file](https://github.com/elastic/apm-server/blob/master/apm-server.reference.yml)
@@ -14,6 +23,7 @@ Here are somewhat different from the original [reference file](https://github.co
 apm-server:
   host: "0.0.0.0:8200"
   shutdown_timeout: 15s
+  secret_token: xxVpmQB2HMzCL9PgBHVrnxjNXXw5J7bd79DFm6sjBJR5HPXDhcF8MSb3vv4bpg44
 output.elasticsearch:
   hosts: ["elasticsearch:9200"]
 setup.dashboards.enabled: true
