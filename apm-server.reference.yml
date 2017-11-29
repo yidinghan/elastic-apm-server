@@ -15,7 +15,7 @@ apm-server:
 
   # Authorization token to be checked. If a token is set here the agents must
   # send their token in the following format: Authorization: Bearer <secret-token>
-  #secret_token:
+  secret_token: xxVpmQB2HMzCL9PgBHVrnxjNXXw5J7bd79DFm6sjBJR5HPXDhcF8MSb3vv4bpg44
 
   #ssl.enabled: false
   #ssl.certificate : "path/to/cert"
