@@ -190,29 +190,6 @@
     }
   },
   {
-    "_id": "d2e70a40-ef6d-11e7-8a5a-4d62d46152a4",
-    "_type": "search",
-    "_source": {
-      "title": "relationship limit 1000 request",
-      "description": "",
-      "hits": 0,
-      "columns": [
-        "context.request.url.search"
-      ],
-      "sort": [
-        "@timestamp",
-        "desc"
-      ],
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"apm-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"apm-*\",\"key\":\"transaction.name.keyword\",\"negate\":false,\"params\":{\"query\":\"GET /relationships\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"GET /relationships\"},\"query\":{\"match\":{\"transaction.name.keyword\":{\"query\":\"GET /relationships\",\"type\":\"phrase\"}}}},{\"query\":{\"regexp\":{\"context.request.url.search\":\".*limit=1000.*\"}},\"meta\":{\"negate\":false,\"index\":\"apm-*\",\"disabled\":false,\"alias\":null,\"type\":\"custom\",\"key\":\"query\",\"value\":\"{\\\"regexp\\\":{\\\"context.request.url.search\\\":\\\".*limit=1000.*\\\"}}\"},\"$state\":{\"store\":\"appState\"}}]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "1ffc5e20-7827-11e7-8c47-65b845b5cfb3",
     "_type": "visualization",
     "_source": {
