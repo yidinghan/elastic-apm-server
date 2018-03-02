@@ -1,6 +1,6 @@
-FROM docker.elastic.co/apm/apm-server:6.1.1
+FROM docker.elastic.co/apm/apm-server:6.2.2
 
-COPY apm-dashboards.json /usr/share/apm-server/kibana/default/dashboard/apm-dashboards.json
+# COPY apm-dashboards.json /usr/share/apm-server/kibana/default/dashboard/apm-dashboards.json
 COPY apm-server.reference.yml /usr/share/apm-server/apm-server.yml
 
 USER root
